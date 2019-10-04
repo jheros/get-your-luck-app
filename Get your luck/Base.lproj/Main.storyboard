@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QWI-0G-4nn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HistoryVC-->
+        <scene sceneID="5pO-51-dbt">
+            <objects>
+                <viewController storyboardIdentifier="HistoryVC" id="IdJ-rQ-Hre" customClass="HistoryVC" customModule="Get_your_luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v03-JO-ziG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8wd-gP-mqj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1u-Uv-ByL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="-577"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Get_your_luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-yO-Oy2">
+                                <rect key="frame" x="20" y="140" width="110" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47974711660000002" blue="0.99987572430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="1A9-Mx-78I"/>
+                                    <constraint firstAttribute="height" constant="34" id="NK8-0A-FZA"/>
+                                </constraints>
+                                <state key="normal" title="History">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IdJ-rQ-Hre" kind="show" id="GHU-zh-MMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVM-LG-jB3">
+                                <rect key="frame" x="284" y="140" width="110" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47974711660000002" blue="0.99987572430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HHk-dr-DOf"/>
+                                    <constraint firstAttribute="width" constant="110" id="uFw-BR-aYh"/>
+                                </constraints>
+                                <state key="normal" title="Disclaimer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJT-nH-2Da">
+                                <rect key="frame" x="137" y="278" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="cwa-S0-ulQ"/>
+                                    <constraint firstAttribute="width" constant="140" id="w6B-C7-xed"/>
+                                </constraints>
+                                <state key="normal" image="clover"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-79-Kid">
+                                <rect key="frame" x="129" y="458" width="156" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="euz-Q4-nYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Get your Luck">
+                                    <color key="titleColor" red="0.65979660621065994" green="0.6483870284472345" blue="0.27924750090644035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0LD-Sw-bFe" kind="show" id="gCa-WI-C39"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-tK-mhn">
+                                <rect key="frame" x="207" y="538" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="c1o-kj-GHK"/>
+                                    <constraint firstAttribute="height" constant="40" id="oCY-ZM-ais"/>
+                                </constraints>
+                                <state key="normal" image="instagram">
+                                    <color key="titleColor" red="0.65979660620000002" green="0.64838702839999995" blue="0.2792475009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po9-HN-khp">
+                                <rect key="frame" x="151" y="538" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4AC-Go-zpp"/>
+                                    <constraint firstAttribute="width" constant="40" id="i3I-RE-e78"/>
+                                </constraints>
+                                <state key="normal" image="facebok">
+                                    <color key="titleColor" red="0.65979660620000002" green="0.64838702839999995" blue="0.2792475009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.085071380415890088" green="0.37002300126497456" blue="0.22059368916091462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pvl-yO-Oy2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="6Rx-HT-ACb"/>
+                            <constraint firstItem="UFA-tK-mhn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="20" id="88x-LP-Z8c"/>
+                            <constraint firstItem="CJT-nH-2Da" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="8HQ-zd-ocQ"/>
+                            <constraint firstItem="po9-HN-khp" firstAttribute="top" secondItem="1fR-79-Kid" secondAttribute="bottom" constant="40" id="8L4-yf-Iai"/>
+                            <constraint firstItem="CJT-nH-2Da" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MP4-M8-N0d"/>
+                            <constraint firstItem="EVM-LG-jB3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="PVS-F8-lHH"/>
+                            <constraint firstItem="1fR-79-Kid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFu-Un-fc5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EVM-LG-jB3" secondAttribute="trailing" constant="20" id="d3J-3w-5OT"/>
+                            <constraint firstItem="pvl-yO-Oy2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h99-xI-znY"/>
+                            <constraint firstItem="1fR-79-Kid" firstAttribute="top" secondItem="CJT-nH-2Da" secondAttribute="bottom" constant="40" id="iz8-sF-mpL"/>
+                            <constraint firstItem="UFA-tK-mhn" firstAttribute="leading" secondItem="po9-HN-khp" secondAttribute="trailing" constant="16" id="jFa-Vt-FgE"/>
+                            <constraint firstItem="UFA-tK-mhn" firstAttribute="top" secondItem="1fR-79-Kid" secondAttribute="bottom" constant="40" id="v5L-Hw-fcO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hrh-p5-hd0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="147"/>
+        </scene>
+        <!--PurchaseVC-->
+        <scene sceneID="8I9-ac-N5S">
+            <objects>
+                <viewController storyboardIdentifier="PurchaseVC" id="0LD-Sw-bFe" customClass="PurchaseVC" customModule="Get_your_luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Phx-5y-PMT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo9-CL-wo7">
+                                <rect key="frame" x="67" y="210" width="80" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="ZTH-WG-1ga"/>
+                                    <constraint firstAttribute="width" constant="80" id="cOq-Ly-s9B"/>
+                                </constraints>
+                                <state key="normal" title=" " image="clover"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sZ-1N-csf">
+                                <rect key="frame" x="67" y="307" width="80" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="cMP-kl-4Jg"/>
+                                    <constraint firstAttribute="height" constant="72" id="zNe-2S-KyR"/>
+                                </constraints>
+                                <state key="normal" image="clover"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaq-6T-KLd">
+                                <rect key="frame" x="67" y="408" width="80" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="CFE-Pd-O2X"/>
+                                    <constraint firstAttribute="width" constant="80" id="gHd-FP-zW1"/>
+                                </constraints>
+                                <state key="normal" image="clover"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yll-zD-YTL">
+                                <rect key="frame" x="155" y="318" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l7z-DE-tY8"/>
+                                    <constraint firstAttribute="width" constant="80" id="ymW-Rj-ds0"/>
+                                </constraints>
+                                <state key="normal" title="24 hour  $ 1.99">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ejQ-rA-fhQ">
+                                <rect key="frame" x="155" y="414.5" width="107" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="NiA-Xh-UbP"/>
+                                    <constraint firstAttribute="width" constant="107" id="RVT-1U-tbb"/>
+                                </constraints>
+                                <state key="normal" title="Golden Clover  $ 2.99">
+                                    <color key="titleColor" red="0.99664622550000004" green="0.9834918453" blue="0.41430691069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-af-1ep">
+                                <rect key="frame" x="155" y="221" width="107" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uam-NC-OzC"/>
+                                    <constraint firstAttribute="width" constant="107" id="y9l-xu-kQP"/>
+                                </constraints>
+                                <state key="normal" title="Random Time $0.99">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.085071380419999995" green="0.37002300129999999" blue="0.2205936892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ejQ-rA-fhQ" firstAttribute="leading" secondItem="yaq-6T-KLd" secondAttribute="trailing" constant="8" id="2Ug-ya-Dk5"/>
+                            <constraint firstItem="tWQ-af-1ep" firstAttribute="leading" secondItem="uo9-CL-wo7" secondAttribute="trailing" constant="8" id="2Zf-yJ-VFf"/>
+                            <constraint firstItem="1sZ-1N-csf" firstAttribute="top" secondItem="uo9-CL-wo7" secondAttribute="bottom" constant="25" id="3jE-M7-rFF"/>
+                            <constraint firstItem="yaq-6T-KLd" firstAttribute="leading" secondItem="Wab-N9-tw0" secondAttribute="leading" constant="67" id="6MH-uE-5pk"/>
+                            <constraint firstItem="uo9-CL-wo7" firstAttribute="top" secondItem="Wab-N9-tw0" secondAttribute="top" constant="122" id="Aev-R4-X1W"/>
+                            <constraint firstItem="tWQ-af-1ep" firstAttribute="centerY" secondItem="uo9-CL-wo7" secondAttribute="centerY" id="Eei-5u-T1T"/>
+                            <constraint firstItem="ejQ-rA-fhQ" firstAttribute="centerY" secondItem="yaq-6T-KLd" secondAttribute="centerY" id="MzG-nS-qXf"/>
+                            <constraint firstItem="yll-zD-YTL" firstAttribute="leading" secondItem="1sZ-1N-csf" secondAttribute="trailing" constant="8" id="R1X-b0-6dd"/>
+                            <constraint firstItem="yll-zD-YTL" firstAttribute="centerY" secondItem="1sZ-1N-csf" secondAttribute="centerY" id="YJc-nC-tDb"/>
+                            <constraint firstItem="1sZ-1N-csf" firstAttribute="leading" secondItem="Wab-N9-tw0" secondAttribute="leading" constant="67" id="YaR-hG-iXF"/>
+                            <constraint firstItem="uo9-CL-wo7" firstAttribute="leading" secondItem="Wab-N9-tw0" secondAttribute="leading" constant="67" id="Ym5-zF-pgm"/>
+                            <constraint firstItem="yaq-6T-KLd" firstAttribute="top" secondItem="1sZ-1N-csf" secondAttribute="bottom" constant="29" id="nox-Hq-anr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wab-N9-tw0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7c1-Mp-c8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424.6376811594205" y="146.65178571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rXh-3P-zbr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QWI-0G-4nn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j5p-P1-cfE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wNU-kE-d7I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jtk-V1-n0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clover" width="128" height="128"/>
+        <image name="facebok" width="32" height="32"/>
+        <image name="instagram" width="32" height="32"/>
+    </resources>
+</document>
